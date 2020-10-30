@@ -12,4 +12,3 @@ Please, verify:
   - if the Cmake command returns an error, please delete build folder and create it again (when in the opencv folder --- sudo rm -fR build && mkdir build && cd build);
   - if the cmake runs well, verify if the modules that will be used by you will be installed (in the Cmake log in the terminal);
       - if not, delete build folder and verify what is the missing case, libraries uninstalled or missing directory or low capability GPU :).
-  - 
