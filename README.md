@@ -1,6 +1,7 @@
 # OpenCV_UBUNTU_with_CUDA_cuDNN
-How to install OpenCV in Ubuntu Software with CUDA and cuDNN (with all opencv_contrib modules).
-This formula have been tested using a Nvidia Jetson Nano, with Ubuntu 18.04.
+
+How to install OpenCV in Ubuntu operating system with CUDA and cuDNN (with all opencv_contrib modules).
+This formula have been tested using a Nvidia Jetson Nano, with Ubuntu 18.04, and is part of the SWR Project.
 
 Please, verify:
   - OpenCV version;
@@ -12,4 +13,3 @@ Please, verify:
   - if the cmake runs well, verify if the modules that will be used by you will be installed (in the Cmake log in the terminal);
       - if not, delete build folder and verify what is the missing case, libraries uninstalled or missing directory or low capability GPU :).
   - 
-
