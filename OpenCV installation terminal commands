@@ -206,7 +206,7 @@ Commands to aply in terminal (start with $, # is for comments):
 # select the java-8... environment  
 # Try netbeans again, please.
 
-# Try to uncomment the next line in the netbeans.conf file if the netbeans does not work well: netbeans_jdkhome="/usr/local/netbeans-8.2/bin/jre"
-# go to the netbeans.conf file and comment 
-# go to your java jre folder and copy all folder to the netbeans-8.2 bin folder.
+(forced)
+# Try to uncomment the next line in the netbeans.conf file if the netbeans does not work well: #netbeans_jdkhome="/usr/local/netbeans-8.2/bin/jre"
+# Copy all jre folder to the netbeans-8.2 bin folder.
 	$sudo cp -a /usr/lib/jvm/java-8-openjdk-arm64/jre /usr/local/netbeans-8.2/bin
