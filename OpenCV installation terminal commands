@@ -194,15 +194,19 @@ Commands to aply in terminal (start with $, # is for comments):
 
 #Download netbeans IDE 8.2, download the version that supports all technologies (Netbeans IDE 8.2 ALL at rigth with ~215 MB)
 # link: https://netbeans.org/downloads/old/8.2/
+# select the Java environment as the default java environment directory, clicking in the down arrow and selecting the java-default environment dir.
 # after installation, verify if netbeans runs well. Try to create new C++ project to test.
-# If Netbeans IDE starts and is unable to create new project (dowsn't even open the "new project" pop-up), close netbeans and
+# If Netbeans IDE starts and is unable to create new project (doesn't even open the "new project" pop-up), close netbeans and
 # download the file named "netbeans.conf" in this repository. Go to the Dowload directory where is the file downloaded and open a terminal.
 # Make a copy of the file to the /etc folder of netbeans, where there is a file with the same name.
 	$sudo cp -a netbeans.conf /usr/local/netbeans-8.2/etc
 	$source /usr/local/netbeans-8.2/etc/netbeans.conf
-# go to your java jre folder and copy all folder to the netbeans-8.2 bin folder.
-	$sudo cp -a /usr/lib/jvm/java-8-openjdk-arm64/jre /usr/local/netbeans-8.2/bin
 # set java 8.0 as your default java environment, it must be the 3rd (press key 2)
 	$sudo update-alternatives --config java
+# select the java-8... environment  
 # Try netbeans again, please.
-    
+
+# Try to uncomment the next line in the netbeans.conf file if the netbeans does not work well: netbeans_jdkhome="/usr/local/netbeans-8.2/bin/jre"
+# go to the netbeans.conf file and comment 
+# go to your java jre folder and copy all folder to the netbeans-8.2 bin folder.
+	$sudo cp -a /usr/lib/jvm/java-8-openjdk-arm64/jre /usr/local/netbeans-8.2/bin
