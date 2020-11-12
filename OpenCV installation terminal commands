@@ -198,6 +198,11 @@ Commands to aply in terminal (start with $, # is for comments):
 # If Netbeans IDE starts and is unable to create new project (dowsn't even open the "new project" pop-up), close netbeans and
 # download the file named "netbeans.conf" in this repository. Go to the Dowload directory where is the file downloaded and open a terminal.
 # Make a copy of the file to the /etc folder of netbeans, where there is a file with the same name.
-	$sudo cd -a netbeans.conf /usr/local/netbeans-8.2/etc
+	$sudo cp -a netbeans.conf /usr/local/netbeans-8.2/etc
+	$source /usr/local/netbeans-8.2/etc/netbeans.conf
+# go to your java jre folder and copy all folder to the netbeans-8.2 bin folder.
+	$sudo cp -a /usr/lib/jvm/java-8-openjdk-arm64/jre /usr/local/netbeans-8.2/bin
+# set java 8.0 as your default java environment, it must be the 3rd (press key 2)
+	$sudo update-alternatives --config java
 # Try netbeans again, please.
     
