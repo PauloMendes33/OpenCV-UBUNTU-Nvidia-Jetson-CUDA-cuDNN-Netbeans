@@ -1,7 +1,7 @@
 # OpenCV in UBUNTU with CUDA and cuDNN
 
 How to install OpenCV in Ubuntu operating system with CUDA and cuDNN (with all opencv_contrib modules).
-This formula have been tested using a Nvidia Jetson Nano, with Ubuntu 18.04.
+This formula have been tested using a Nvidia Jetson Nano and AGX Xavier, with Ubuntu 18.04.
 It is intended to use Netbeans with C/C++ coding (it can be used with Python and other IDE).
 
 (* *)Please, verify:
