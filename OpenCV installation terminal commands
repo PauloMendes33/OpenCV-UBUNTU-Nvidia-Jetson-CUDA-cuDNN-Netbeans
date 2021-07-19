@@ -143,7 +143,7 @@ Commands to aply in terminal (start with $, # is for comments):
   #Build make
     #Qt flag is disabled to do not have conflicts with it (Qt5.0).
     #Please, verify (* *), read first lines again, please.
-    	$cmake -D CMAKE_BUILD_TYPE=RELEASE \
+    	$sudo cmake -D CMAKE_BUILD_TYPE=RELEASE \
         -D CMAKE_INSTALL_PREFIX=/usr/local \
         -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \
 	-D CMAKE_C_COMPILER=/usr/bin/gcc \
@@ -185,7 +185,7 @@ Commands to aply in terminal (start with $, # is for comments):
         
          # the next modules will not be installed: cnn_3dobj cvv js julia matlab ovis viz
   #Make OpenCV.
-    	$make -j$(nproc)
+    	$sudo make -j$(nproc)
     	#only if build was successful, install all the generated packages to the database of your system.
     	$sudo make install
     	#only if installation was successful.
